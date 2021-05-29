@@ -1,0 +1,32 @@
+.div {
+    background-color: rgba(251, 255, 242, 0.8);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 25px;
+}
+
+.div2 {
+    height: 32px;
+    left: 50%;
+    background-color: blanchedalmond;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.divs .imgs {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.divs .infos {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.select {
+    /*禁止选中*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

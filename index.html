@@ -1,44 +1,71 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>欢迎您</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="svg/logo2.svg">
+    <title>Slowso</title>
+    <link rel="stylesheet" href="css/Button.css">
+    <!--按钮-->
+    <link rel="stylesheet" href="css/text.css">
+    <!--div-->
+    <link rel="stylesheet" href="Fixed background/Fixed background.css">
+    <!--固定背景-->
+    <script src="cherry blossoms/cherry blossoms.js"></script>
+    <!--樱花飘落-->
+    <script src="Time/current time.js"></script>
+    <link rel="stylesheet" href="Time/time.css">
+    <!--时间-->
 </head>
 
-<body>
-    <div class="login-box">
-        <h2>欢迎您</h2>
-        <form>
-            <div class="user-box">
-                <input type="text" name="" id="name" value="" required="" readonly onfocus="this.removeAttribute('readonly')" autocomplete="off">
-                <label>请输入账号</label>
+<body onload="showTime()" class="select">
+    <div class="time"><span id="datetime"></span></div>
+    <!--当前时间-->
+    <div class="div">
+        <div class="div2">
+            <div class="divs">
+                <div style="margin-left: 20px;">
+                    <div class="imgs"><img src="svg/tool.svg" alt=""></div>
+                    <div class="infos"><a>实用工具</a></div>
+                </div>
             </div>
-            <div class="user-box">
-                <input type="password" name="" id="pwd" value="" required="" readonly onfocus="this.removeAttribute('readonly')" autocomplete="off">
-                <label>请输入密码</label>
-            </div>
-            <div>
-                <a type="button" name="" id="btn" onclick=fn() />
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>确定
-                </a>
-            </div>
-        </form>
+        </div>
+        <div class="container">
+            <a target="_blank" href="https://ur.alipay.com/gqWYY/" style="--x:1"><span>违章有奖举报</span></a>
+            <a target="_blank" href="https://fanyi.baidu.com/" style="--x:2"><span>百度翻译</span></a>
+            <a target="_blank" href="https://www.kuaidi100.com/" style="--x:3"><span>快递100</span></a>
+            <a target="_blank" href="https://www.iamwawa.cn/" style="--x:4"><span>蛙蛙工具箱</span></a>
+            <a target="_blank" href="https://voice.baidu.com/act/newpneumonia/newpneumonia/" style="--x:5"><span>百度实时疫情</span></a>
+            <a target="_blank" href="/images/elm.png" style="--x:6"><span>饿了么每日红包</span></a>
+            <a target="_blank" href="/images/mt.png" style="--x:7"><span>美团每日红包</span></a>
+            <a target="_blank" href="https://s.click.taobao.com/AqFAonu" style="--x:8"><span>淘宝一元购</span></a>
+        </div>
     </div>
-    <script type="text/javascript">
-        function fn() {
-            var name = document.getElementById('name');
-            var pwd = document.getElementById('pwd');
-            if (name.value == '123456' & pwd.value == '666666') {
-                window.location.href = "index/index.html";
-            } else {
-                document.getElementById("div1").innerText = "Hello";
-            }
-        }
-    </script>
+    <div style="height: 50px;"></div>
+    <!--间隔-->
+    </div>
+    <div class="div">
+        <div class="div2">
+            <div class="divs">
+                <div style="margin-left: 20px;">
+                    <div class="imgs"><img src="svg/website.svg" alt=""></div>
+                    <div class="infos"><a>搜索导航</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a target="_blank" href="https://www.baidu.com/" style="--x:7"><span>百度一下</span></a>
+            <a target="_blank" href="https://www.sogou.com/" style="--x:8"><span>搜狗</span></a>
+            <a target="_blank" href="https://cn.bing.com/" style="--x:9"><span>Bing</span></a>
+            <a target="_blank" href="https://www.so.com/" style="--x:10"><span>360搜索</span></a>
+            <a target="_blank" href="https://hao.360.com/" style="--x:11"><span>360导航</span></a>
+            <a target="_blank" href="http://www.chinaso.com/" style="--x:12"><span>中国搜索</span></a>
+        </div>
+    </div>
+
+    <span id="runtime_span" style="position: fixed;bottom: 0;left: 0;right: 0;background-color: rgba(0, 0, 0, 0.3);color: rgb(255, 123, 0);width: 100%;text-align: center;font-size: 30px;line-height: 30px;"></span>
+    <script type="text/javascript" src="Time/Time already running.js"></script>
+    <!--网站已运行时间-->
 </body>
 
 </html>
